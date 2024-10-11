@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
-    --bg-color: #203047;
-    --primary-color: #87d9e7;
-    --secondary-color: #b8f0e4;
+    --bg-color: #41566e;
+    --primary-color: #6f98d4;
+    --secondary-color: #7895e4;
     --font: "Nunito Sans", sans-serif;
 }
 
@@ -46,25 +46,25 @@ nav a:hover {
     transition: transform 0.1s;
 }
 
+.graficos-container {
+    margin: 5rem;
+}
+
 .grafico {
     margin-top: 3rem;
 }
 
-.graficos-container {
-    margin: 5rem;
-  }
-  
-  .graficos-container_texto {
+.graficos-container__texto {
     font-size: 1.3rem;
     text-align: center;
     padding: 2rem;
-  border: var(--secondary-color) solid 2px;
-  }
+    border: var(--secondary-color) solid 2px;
+}
 
-  span {
+span {
     font-weight: bold;
     color: var(--secondary-color);
-   }
+}
 
 footer {
     display: flex;
