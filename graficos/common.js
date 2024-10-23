@@ -1,6 +1,5 @@
 const getCSS = (variavel) => {
-  const bodyStyles = getComputedStyle(document.body)
-  return bodyStyles.getPropertyValue(variavel)
+  return getComputedStyle(document.body).getPropertyValue(variavel)
 }
 
 const tickConfig = {
@@ -9,4 +8,11 @@ const tickConfig = {
   color: getCSS('--primary-color')
 }
 
-export {getCSS, tickConfig}
+function criarGrafico(data, layout) {
+  const grafico = document.createElement('div');
+  grafico.className = 'grafico';
+  document.getElementById('graficos-container').appendChild(grafico);
+  Plotly.newPlot(grafico, data, layout)
+}
+
+export { getCSS, tickConfig, criarGrafico }
